@@ -24,7 +24,7 @@ class ExampleUnitTest {
 
     @Test
     fun getTextTest3() {
-        assertEquals("High", Helper.getText(100))
+        assertEquals("High", Helper.getText(20))
     }
 
 
