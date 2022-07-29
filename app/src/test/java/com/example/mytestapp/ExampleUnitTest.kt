@@ -22,8 +22,8 @@ class ExampleUnitTest {
         assertEquals("Low", Helper.getText(50))
     }
 
-    /*@Test
+    @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
-    }*/
+    }
 }
