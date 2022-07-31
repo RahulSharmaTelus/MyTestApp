@@ -22,10 +22,10 @@ class ExampleUnitTest {
         assertEquals("Low", Helper.getText(50))
     }
 
-    @Test
+    /*@Test
     fun getTextTest3() {
         assertEquals("Low", Helper.getText(20))
-    }
+    }*/
 
 
     /*@Test
