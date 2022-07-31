@@ -23,8 +23,8 @@ jobs:
       - name: Run Unit Test
         run: ./gradlew testDebugUnitTestCoverageVerification
 
-      - name: Run Test Coverage
-        run: ./gradlew jacocoTestReport
+      #- name: Run Test Coverage
+       # run: ./gradlew jacocoTestReport
 
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
