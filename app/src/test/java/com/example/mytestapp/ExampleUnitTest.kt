@@ -19,12 +19,12 @@ class ExampleUnitTest {
 
     @Test
     fun getTextTest2() {
-        assertEquals("Low", Helper.getText(50))
+        assertEquals("Low", Helper.getText(150))
     }
 
     @Test
     fun getTextTest3() {
-        assertEquals("Low", Helper.getText(20))
+        assertEquals("Low", Helper.getText(120))
     }
 
 

@@ -22,9 +22,6 @@ jobs:
       - name: Run Unit Test
         run: ./gradlew testDebugUnitTestCoverageVerification
 
-#      - name: Run Test Coverage
-#        run: ./gradlew createDebugCoverageReport
-
       - name: Log coverage percentage
         run: |
           echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
