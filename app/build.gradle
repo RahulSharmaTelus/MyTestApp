@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 apply from: '../jacoco.gradle'
+apply plugin: 'org.jetbrains.dokka'
 
 android {
     compileSdk 32
@@ -31,6 +32,24 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(file("${project.buildDir}/documentation/dokka/html"))
+}
+
+tasks.dokkaJavadoc.configure {
+    outputDirectory.set(file("../documentation/javadoc"))
+}
+
+tasks.dokkaGfm.configure {
+    outputDirectory.set(file("../documentation/gfm"))
+}
+
+tasks.withType(dokkaHtml.getClass()).configureEach {
+    pluginsMapConfiguration.set(
+            ["org.jetbrains.dokka.base.DokkaBase": """{ "separateInheritedMembers": true}"""]
+    )
 }
 
 dependencies {

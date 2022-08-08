@@ -9,12 +9,42 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    companion object {
+    /**
+     * Calculate sum of the two numbers
+     *
+     * @first first number integer
+     * @second second number integer
+     *
+     * @return return sum integer
+     */
+    fun sum(first: Int,second: Int) : Int {
+        return first + second
+    }
 
-        fun appendString(string: String): String {
-            val first = "Telus "
-            return first + string
+    fun subtract(first: Int,second: Int) : Int {
+        return first - second
+    }
+
+    fun multiply(first: Int,second: Int) : Int {
+        return first * second
+    }
+
+    fun divide(first: Int,second: Int) : Int {
+        return first / second
+    }
+
+    /**
+     * Check if the given number is prime or not
+     */
+    fun isPrime(num: Int) : Boolean {
+        var flag = true
+        for (i in 2..num / 2) {
+            // condition for nonprime number
+            if (num % i == 0) {
+                flag = false
+                break
+            }
         }
-
+        return flag
     }
 }
