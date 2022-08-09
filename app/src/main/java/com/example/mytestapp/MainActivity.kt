@@ -3,6 +3,9 @@ package com.example.mytestapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+/**
+ * This is our main activity class
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
