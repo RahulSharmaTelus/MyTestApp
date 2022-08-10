@@ -31,15 +31,13 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2
         with:
           generate-branches-badge: true
-          jacoco-csv-file: app/build/reports/jacoco/testDebugUnitTestCoverage/testDebugUnitTestCoverage.csv
+          jacoco-csv-file: app/build/Documentation/jacoco/testDebugUnitTestCoverage/testDebugUnitTestCoverage.csv
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: Documentation
-          path: |
-            app/build/Documentation/dokka/html/*
-            app/build/reports/jacoco/testDebugUnitTestCoverage/*
+          path: app/build/Documentation/*
 
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3

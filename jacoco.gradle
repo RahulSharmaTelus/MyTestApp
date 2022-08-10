@@ -1,6 +1,7 @@
 apply plugin: 'jacoco'
 jacoco {
-    toolVersion = "0.8.7"
+    toolVersion = "0.8.8"
+    reportsDirectory.set(layout.buildDirectory.dir("Documentation/jacoco/"))
 }
 project.afterEvaluate {
     if (android.hasProperty("applicationVariants")) {
@@ -86,7 +87,7 @@ def createVariantCoverage(variant) {
         getExecutionData().setFrom(files("${project.buildDir}/outputs/unit_test_code_coverage/${variantName}UnitTest/${testTaskName}.exec"))
 
         doLast {
-            def m = new File("${project.buildDir}/reports/jacoco/${testTaskName}Coverage/html/index.html")
+            def m = new File("${project.buildDir}/Documentation/jacoco/${testTaskName}Coverage/html/index.html")
                     .text =~ /Total[^%]*>(\d?\d?\d?%)/
             if (m) {
                 println "Test coverage: ${m[0][1]}"
