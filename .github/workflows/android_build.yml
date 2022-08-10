@@ -22,9 +22,6 @@ jobs:
       - name: Run Unit Test
         run: ./gradlew testDebugUnitTestCoverageVerification
 
-      - name: Generate dokka files
-        run: ./gradlew.bat dokkahtml
-
       - name: Log coverage percentage
         run: |
           echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
