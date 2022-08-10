@@ -37,7 +37,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Report-Files
-          path: app/build/reports/jacoco/testDebugUnitTestCoverage/*
+          path: |
+            app/build/reports/jacoco/testDebugUnitTestCoverage/*
+            |app/build/dokka/html/*
 
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3
