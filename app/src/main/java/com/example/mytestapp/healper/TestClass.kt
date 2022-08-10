@@ -7,4 +7,11 @@ class TestClass constructor(country: String) {
 
     var abc = country
 
+    /**
+     * This is the secondary constructor of Test class.
+     */
+    constructor(pmName: String, age: Int) : this("India") {
+        println("PM Name: $pmName\nAge: $age")
+    }
+
 }
