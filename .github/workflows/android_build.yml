@@ -20,7 +20,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Generate Dokka Report
-        run: ./gradlew.bat dokkahtml
+        run: ./gradlew dokkahtml
 
       - name: Run Unit Test
         run: ./gradlew testDebugUnitTestCoverageVerification
