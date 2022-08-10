@@ -34,6 +34,7 @@ android {
     }
 }
 
+// Custom path for dokka output files
 tasks.dokkaHtml.configure {
     outputDirectory.set(file("${project.buildDir}/Documentation/dokka/html"))
 }
@@ -46,10 +47,20 @@ tasks.dokkaGfm.configure {
     outputDirectory.set(file("../Documentation/gfm"))
 }
 
+// Separate inherited functions
 tasks.withType(dokkaHtml.getClass()).configureEach {
     pluginsMapConfiguration.set(
             ["org.jetbrains.dokka.base.DokkaBase": """{ "separateInheritedMembers": true}"""]
     )
+}
+
+// Hiding deprecated functions
+dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            skipDeprecated.set(true)
+        }
+    }
 }
 
 dependencies {
