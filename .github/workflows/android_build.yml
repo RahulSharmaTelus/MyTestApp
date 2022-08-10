@@ -39,7 +39,7 @@ jobs:
           name: Documentation
           path: |
             app/build/Documentation/dokka/html/*
-            !app/build/reports/jacoco/testDebugUnitTestCoverage/*
+            app/build/reports/jacoco/testDebugUnitTestCoverage/*
 
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3
