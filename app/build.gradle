@@ -61,12 +61,7 @@ dokkaHtml.configure {
             skipDeprecated.set(true)
         }
     }
-    moduleName.set("moduleName")
-    dokkaSourceSets {
-        named("main") {
-            noAndroidSdkLink.set(false)
-        }
-    }
+    moduleName.set("MyTestApp")
 }
 
 dependencies {
