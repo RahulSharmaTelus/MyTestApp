@@ -40,11 +40,11 @@ tasks.dokkaHtml.configure {
 }
 
 tasks.dokkaJavadoc.configure {
-    outputDirectory.set(file("../Documentation/javadoc"))
+    outputDirectory.set(file("${project.buildDir}/Documentation/javadoc"))
 }
 
 tasks.dokkaGfm.configure {
-    outputDirectory.set(file("../Documentation/gfm"))
+    outputDirectory.set(file("${project.buildDir}/Documentation/gfm"))
 }
 
 // Separate inherited functions
