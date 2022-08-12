@@ -1,0 +1,20 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.mytestapp.healper////PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/index.html
+$dokka.location:com.example.mytestapp.healper/Helper///PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-helper/index.html
+$dokka.location:com.example.mytestapp.healper/Helper/getText/#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-helper/get-text.html
+$dokka.location:com.example.mytestapp.healper/TestClass///PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-test-class/index.html
+$dokka.location:com.example.mytestapp.healper/TestClass/TestClass/#kotlin.String#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-test-class/-test-class.html
+$dokka.location:com.example.mytestapp.healper/TestClass/TestClass/#kotlin.String/PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-test-class/-test-class.html
+$dokka.location:com.example.mytestapp.healper/TestClass/abc/#/PointingToDeclaration/-my-test-app/com.example.mytestapp.healper/-test-class/abc.html
+$dokka.location:com.example.mytestapp////PointingToDeclaration/-my-test-app/com.example.mytestapp/index.html
+$dokka.location:com.example.mytestapp/MainActivity///PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/index.html
+$dokka.location:com.example.mytestapp/MainActivity/MainActivity/#/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/-main-activity.html
+$dokka.location:com.example.mytestapp/MainActivity/divide/#kotlin.Int#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/divide.html
+$dokka.location:com.example.mytestapp/MainActivity/isPrime/#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/is-prime.html
+$dokka.location:com.example.mytestapp/MainActivity/multiply/#kotlin.Int#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/multiply.html
+$dokka.location:com.example.mytestapp/MainActivity/subtract/#kotlin.Int#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/subtract.html
+$dokka.location:com.example.mytestapp/MainActivity/sum/#kotlin.Int#kotlin.Int/PointingToDeclaration/-my-test-app/com.example.mytestapp/-main-activity/sum.html
+com.example.mytestapp
+com.example.mytestapp.healper
+
